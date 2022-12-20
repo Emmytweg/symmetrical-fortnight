@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="ip.css">
+ <link rel="stylesheet" href="leaflet.css">
+</head>
+<body>
+<div class="ip-container">
+    <div class="ip-image">
+        <div class="in-ip-img">
+            <h1>IP Address Tracker</h1>
+            <form role="search" class="in-form" >
+                <input class="search" type="search" id="search" placeholder="Search for an IP address or domain">
+                <div class="send" findSearch>
+                    <img src="icon-arrow.svg" alt="">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="inside-info">
+        <div class="ip-infos">
+            <div class="first-info">
+                <small>IP ADDRESS</small>
+                <h5 id="ip-address">192.212.174.101</h5>
+            </div>
+            <div class="first-info">
+                <small>LOCATION</small>
+                <h5 location>Brooklyn, NY 10001</h5>
+            </div>
+            <div class="first-info">
+                <small>TIMEZONE</small>
+                <h5 timezone>UTC-05:00</h5>
+            </div>
+            <div class="first-info">
+                <small>ISP</small>
+                <h5 isp>SpacrX Startlink</h5>
+            </div>
+    </div>
+    </div>
+    <div id="map"></div> 
+
+</div>
+
+
+
+    <script src="ip.js"></script>
+
+</body>
+</html>
